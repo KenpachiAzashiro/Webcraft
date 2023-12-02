@@ -1,0 +1,41 @@
+body{
+    background-color: black;
+    background-image: url(https://static.toiimg.com/thumb/msid-65336414,imgsize-36402,width-400,resizemode-4/65336414.jpg);
+    background-repeat: no-repeat;
+    background-size: 7cm;
+    background-position: 15cm;
+    background-position-x: 2cm;
+    background-position-y: 5cm; 
+    
+}
+.top{
+   
+    padding-top: 5cm;
+    padding-left: 13cm;
+    font-family: Arial;
+}
+.edit{
+    font-family: Arial;
+    color: aquamarine;
+    border-color: aquamarine;
+    background-color: transparent;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+.edit:hover{
+    color: black;
+    background-color: aquamarine;
+    transition: ease-in 0.50s;
+    transition: ease-out 0.50s;
+}
+@media (max-width: 767px) {
+    .top {
+        
+        justify-content: right;
+        padding: 0cm;
+        margin-top: 15cm;
+    }
+
+}

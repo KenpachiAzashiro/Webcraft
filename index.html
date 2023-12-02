@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="top">
+        <h4 style="margin: 1px; font-size: medium; font-weight: 100; color: aquamarine;">DASHAMOOLAM DAAMU </h4>
+        <h1 id="changingText1" style="margin: 1px; color: azure; font-weight: lighter;">I'm a Web</h1>
+        <h1 id="changingText2" style="margin: 1px; color: aquamarine;font-weight: lighter;">Developer</h1>
+        <p style="color: aliceblue;" class="dasha"> Tech Enthusiast. Ignore the hate and move on <br> <br> And a fact Bleach has the most dripped characters <br><br> ENTE SIVANEEEE
+        </p>
+        <a target="_blank" href="https://www.instagram.com/dashamoolam.media/">
+            <button class="edit">
+                Contact
+            </button>
+        </a>
+    </div>
+    
+    <script>
+        
+        const textElement1 = document.getElementById("changingText1");
+        const textElement2 = document.getElementById("changingText2");
+        
+        const texts1 = ["I'm a Web", "I'm a UI/UX","I'm a Tech","I'm"];
+        const texts2 = ["Developer", "Designer","Enthusiast","Vengence"];
+        
+        let index1 = 0;
+        let index2 = 0;
+
+        function changeText() {
+            textElement1.textContent = texts1[index1];
+            textElement2.textContent = texts2[index2];
+            
+            index1 = (index1 + 1) % texts1.length;
+            index2 = (index2 + 1) % texts2.length;
+        }
+
+        setInterval(changeText, 3000);
+    </script>
+</body>
+</html>
